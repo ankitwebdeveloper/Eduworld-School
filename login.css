@@ -1,0 +1,200 @@
+/* ==== Login Page ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #003c8f, #00aaff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==== Login Card ==== */
+.login-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeInUp 1s ease;
+}
+
+.login-card h2 {
+  font-weight: 700;
+  color: #003c8f;
+}
+
+.login-card h2 span {
+  color: #00aaff;
+}
+
+.login-card p {
+  color: #555;
+}
+
+/* ==== Inputs ==== */
+.input-group-text {
+  background: #f0f7ff;
+  border: none;
+  color: #00aaff;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.4);
+}
+
+/* ==== Buttons ==== */
+.btn-primary {
+  background: linear-gradient(135deg, #003c8f, #00aaff);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00aaff, #003c8f);
+  transform: scale(1.03);
+}
+
+/* ==== Links ==== */
+.forgot-link {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-link:hover,
+.login-card a:hover {
+  text-decoration: underline;
+  color: #003c8f;
+}
+
+/* ==== Animation ==== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+}
+
+
+/* ==== Register Page ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #003c8f, #00aaff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==== Register Card ==== */
+.register-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+  animation: fadeInUp 1s ease;
+}
+
+.register-card h2 {
+  font-weight: 700;
+  color: #003c8f;
+}
+
+.register-card h2 span {
+  color: #00aaff;
+}
+
+.register-card p {
+  color: #555;
+}
+
+/* ==== Input Fields ==== */
+.input-group-text {
+  background: #f0f7ff;
+  border: none;
+  color: #00aaff;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.4);
+}
+
+/* ==== Buttons ==== */
+.btn-primary {
+  background: linear-gradient(135deg, #003c8f, #00aaff);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00aaff, #003c8f);
+  transform: scale(1.03);
+}
+
+/* ==== Links ==== */
+.register-card a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-card a:hover {
+  color: #003c8f;
+  text-decoration: underline;
+}
+
+/* ==== Animation ==== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 576px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+}
+
