@@ -1,0 +1,106 @@
+/* ===== Hero Section ===== */
+.gallery-hero {
+  height: 70vh;
+  background: linear-gradient(120deg, rgba(0, 60, 143, 0.85), rgba(0, 170, 255, 0.6)),
+    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.gallery-hero h1 span {
+  color: #00f0ff;
+}
+
+.gallery-hero p {
+  font-size: 1.1rem;
+  color: #eaf6ff;
+  max-width: 700px;
+  margin: 15px auto 0;
+}
+
+/* ===== Gallery Section ===== */
+.gallery-section h2 {
+  color: #003c8f;
+  font-weight: 700;
+}
+
+.gallery-section h2 span {
+  color: #00aaff;
+}
+
+.gallery-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 260px;
+  box-shadow: 0 8px 20px rgba(0, 170, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 170, 255, 0.25);
+}
+
+/* ===== Animation ===== */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-up-text {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: slideUp 1.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 60vh;
+  }
+
+  .gallery-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .gallery-card {
+    height: 220px;
+  }
+}

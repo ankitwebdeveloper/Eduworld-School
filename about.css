@@ -1,0 +1,275 @@
+/* ===== About Hero Section ===== */
+.about-hero {
+  height: 70vh;
+  background: linear-gradient(120deg, rgba(0, 60, 143, 0.85), rgba(0, 170, 255, 0.6)),
+    url('https://images.unsplash.com/photo-1600195077074-6015f975348b?auto=format&fit=crop&w=1600&q=80') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about-hero h1 span {
+  color: #00f0ff;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 15px auto 0;
+  color: #eaf6ff;
+}
+
+/* Text Animations */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-up-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 60vh;
+    background-position: center;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== About Institute Intro ===== */
+.about-intro img {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 170, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-intro img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 170, 255, 0.3);
+}
+
+.about-intro h2 {
+  font-size: 2rem;
+  color: #003c8f;
+}
+
+.about-intro p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.btn-learn-more {
+  background: linear-gradient(120deg, #003c8f, #00aaff);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 24px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background: linear-gradient(120deg, #00aaff, #003c8f);
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-intro h2 {
+    text-align: center;
+  }
+  .about-intro p {
+    text-align: center;
+  }
+  .about-intro .btn-learn-more {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ===== Mission & Vision Section ===== */
+.mission {
+  background: #f8faff;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003c8f;
+}
+
+.mission .card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.mission .card i {
+  color: #00aaff;
+}
+
+.mission .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 170, 255, 0.2);
+}
+
+.mission .card h5 {
+  color: #003c8f;
+}
+
+.mission .card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ===== What Makes Us Different Section ===== */
+.why-different {
+  background: #f8faff;
+}
+
+.why-different h2 span {
+  color: #00aaff;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 170, 255, 0.2);
+}
+
+.feature-card i {
+  color: #00aaff;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover i {
+  transform: scale(1.1);
+  color: #003c8f;
+}
+
+.feature-card h5 {
+  color: #003c8f;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .why-different h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== Leadership / Director’s Message Section ===== */
+.leadership {
+  background: linear-gradient(120deg, #ffffff, #f1f8ff);
+}
+
+.leadership h2 {
+  color: #003c8f;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.leadership p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.director-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 6px solid #00aaff;
+  transition: all 0.4s ease;
+}
+
+.director-img:hover {
+  transform: scale(1.05);
+  border-color: #003c8f;
+  box-shadow: 0 10px 25px rgba(0, 170, 255, 0.3);
+}
+
+.leadership .fst-italic {
+  color: #003c8f;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.leadership .fst-italic::before,
+.leadership .fst-italic::after {
+  content: '"';
+  color: #00aaff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .director-img {
+    width: 200px;
+    height: 200px;
+  }
+  .leadership h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .leadership p {
+    text-align: center;
+  }
+}

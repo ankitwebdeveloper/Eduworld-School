@@ -1,0 +1,162 @@
+/* ===== Hero Section ===== */
+.admission-hero {
+  height: 70vh;
+  background: linear-gradient(120deg, rgba(0, 60, 143, 0.85), rgba(0, 170, 255, 0.6)),
+    url('https://images.unsplash.com/photo-1600195077074-6015f975348b?auto=format&fit=crop&w=1600&q=80') center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.admission-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.admission-hero h1 span {
+  color: #00f0ff;
+}
+
+.admission-hero p {
+  font-size: 1.2rem;
+  color: #eaf6ff;
+  max-width: 750px;
+  margin: 15px auto 0;
+}
+
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-up-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Steps Section ===== */
+/* ===== Steps Section ===== */
+.admission-steps {
+  background: #f8faff;
+}
+
+.admission-steps h2 {
+  color: #003c8f;
+  font-weight: 700;
+}
+
+.admission-steps h2 span {
+  color: #00aaff;
+}
+
+.step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  height: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 170, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.step-card i {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.step-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #003c8f;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 170, 255, 0.3);
+}
+
+/* ===== Admission Form Section ===== */
+.admission-form {
+  background: linear-gradient(120deg, #ffffff, #f1f8ff);
+}
+
+.admission-form h2 {
+  color: #003c8f;
+  font-weight: 700;
+}
+
+.admission-form h2 span {
+  color: #00aaff;
+}
+
+.btn-apply {
+  background: linear-gradient(120deg, #003c8f, #00aaff);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
+}
+
+.btn-apply:hover {
+  background: linear-gradient(120deg, #00aaff, #003c8f);
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.5);
+}
+
+/* ===== Contact Info ===== */
+.contact-info {
+  background: linear-gradient(120deg, #003c8f, #00aaff);
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .admission-hero {
+    height: 60vh;
+  }
+  .admission-hero h1 {
+    font-size: 2.2rem;
+  }
+  .admission-steps h2 {
+    font-size: 1.8rem;
+  }
+}
